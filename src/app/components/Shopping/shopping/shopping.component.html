@@ -1,0 +1,9 @@
+<div class="row  ms-1 me-1 mt-2 mb-2">
+  <div class="col-12 col-lg-4 p-2  " *ngFor="let p of shopCart" ListBox>
+      <a [routerLink]="['/shop',p.id]" class="text-decoration-none text-dark">
+      <img src="{{p.thumbnail}}" alt="" class="w-100" height="200">
+      <h2>{{p.title}}</h2>
+      <p>{{p.description}}</p>
+  </a>
+  </div>
+</div>

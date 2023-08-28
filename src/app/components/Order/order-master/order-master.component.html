@@ -1,0 +1,9 @@
+<div class="mb-3 ">
+  <label for="prdCat" class="form-label">Category : </label>
+  <select name="" id="" class="form-control" [(ngModel)]="selectedCatID">
+      <option value="0">All</option>
+      <option value="{{cat.id}}" *ngFor="let cat of catList">{{cat.name}}</option>
+  </select>
+</div>
+
+<app-product-list  [sendCatId]="selectedCatID"></app-product-list>
